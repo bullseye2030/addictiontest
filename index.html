@@ -18,11 +18,17 @@
    </div>
    
    <div id="quiz">
-    
+    <button onclick="quizAdvance()" class="btn btn-success btn-lg">Start The Quiz!</button>
    </div>
  </div>
  
  <script>
+  var quizQuestions = ["What programming languages do you know?", "How many hours do you use your computer a day?"]
+  
+  function quizAdvance() {
+   
+  }
+  
   window.onbeforeunload = function() {
    return "Are you sure you want to end the quiz?"
   }
