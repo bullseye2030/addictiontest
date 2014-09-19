@@ -22,11 +22,14 @@
    </div>
  </div>
  
+ <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
  <script>
   var quizQuestions = ["What programming languages do you know?", "How many hours do you use your computer a day?"]
+  var page = 0;
   
   function quizAdvance() {
-   
+   page = page + 1;
+   $("#quiz").html(quizQuestions[page]);
   }
   
   window.onbeforeunload = function() {
