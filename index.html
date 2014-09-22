@@ -34,12 +34,15 @@
   var score = 0;
   
   function quizAdvance(clicked) {
+   
+   page = page + 1;
+   
    score = score + clicked;
    if ((page+1) > quizQuestions.length) {
     $("#quiz").html("<h1>Congratulations!</h1>You finished the quiz. <br><br> <h3>You scored...</h3><h1>" + score + "%!</h1>")
+    return;
    }
    
-   page = page + 1;
    ansText = "";
    quizAnswers[page].forEach(function(e) {
     ansText = ansText + "<a href='javascript:;' onclick='quizAdvance(" + e[1] + ")'>" + e[0] + "</a><br>";
