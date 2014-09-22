@@ -45,7 +45,7 @@
    
    score = score + clicked;
    if ((page+1) > quizQuestions.length) {
-    $("#quiz").html("<h1>Congratulations!</h1><h2>You finished the quiz.</h2> <br><br> <h3>You scored...</h3><h1>" + score + "%!</h1><br><br>")
+    $("#quiz").html("<h1>Congratulations!</h1><h2>You finished the quiz.</h2> <br><br> <h3>You scored...</h3><h1>" + score + "%!</h1><br><br><a href='/addictiontest'>Retry!</a>");
     $("#tweet").data("text", "I scored " + score + " on the computer addiction test!");
     return;
    }
