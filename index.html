@@ -38,6 +38,7 @@
    quizAnswers[page].forEach(function(e) {
     ansText = ansText + "<a href='javascript:;' onclick='quizAdvance(" + e[1] + ")'>" + e[0] + "</a><br>";
    });
+   $("#qnum").html(page + " / " + quizQuestions.length)
    $("#quiz").html("<p>" + quizQuestions[page] + "</p><br><br>" + ansText);
   }
   
