@@ -45,7 +45,7 @@
    
    score = score + clicked;
    if ((page+1) > quizQuestions.length) {
-    $("#quiz").html("<h1>Congratulations!</h1><h2>You finished the quiz.</h2> <br><br> <h3>You scored...</h3><h1>" + score + "%!</h1><br><br><a href='/addictiontest'>Retry!</a>");
+    $("#quiz").html("<h1>Congratulations!</h1><h2>You finished the quiz.</h2> <br><br> <h3>You scored...</h3><h1>" + score + "%!</h1><br><br><a href='/addictiontest' class='btn btn-lg btn-danger'>Retry!</a>");
     $("#tweet").data("text", "I scored " + score + " on the computer addiction test!");
     return;
    }
@@ -56,10 +56,6 @@
    });
    $("#qnum").html((page+1) + " / " + quizQuestions.length)
    $("#quiz").html("<p>" + quizQuestions[page] + "</p><br><br>" + ansText);
-  }
-  
-  window.onbeforeunload = function() {
-   return "Are you sure you want to end the quiz?"
   }
  </script>
 </body>
