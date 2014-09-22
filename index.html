@@ -35,7 +35,7 @@
  <script>
   var quizQuestions = ["What programming languages do you know?", "How many hours do you use your computer a day?", "Do you own a Mac?", "Do you use a Raspberry Pi?", "What is your favourite video game?", "What browser do you use?", "What do you spend most time doing on your computer?", "Do you enjoy it?", "What do you think of what you have seen today?", "Would you take this test again?"]
 
-  var quizAnswers = [[["Everything. Java, Python, PHP, you name it!", 10], ["I can make a website.", 6], ["None.", 4], ["What's a program?", 2]], [["I don't want to say.", 10], ["About 3 hours", 6], ["An hour", 4],["I don't have a computer.", 2]], [["No.", 10], ["No.", 10], ["Yes.", 0], ["No.", 10]], [["All the time!", 10], ["Only at home", 6], ["Only at school", 4], ["I prefer strawberry flavour.", 0]], [["Call of Duty", 6], ["Minecraft", 10], ["Chess", 0], ["Indie Games (Super Meat Boy, Terraria, etc.)", 4]], [["Chrome", 10], ["Internet Explorer", 1], ["Firefox", 6], ["What's a browser?", 2]], [["Coding", 10], ["Browsing the web", 6], ["Gaming", 4], ["I don't", 0]], [["Yes. A lot.", 10], ["A bit.", 6], ["Not really.", 4], ["No.", 0]], [["It's great!", 10], ["I like it!", 6], ["It's OK.", 0], ["Maybe.", 0]], [["Yes.", 10], ["Maybe", 6], ["No.", 4], ["Definitely not!", 0]]]
+  var quizAnswers = [[["Everything. Java, Python, PHP, you name it!", 10], ["I can make a website.", 6], ["None.", 4], ["What's a program?", 2]], [["I don't want to say.", 10], ["About 3 hours", 6], ["An hour", 4],["I don't have a computer.", 2]], [["No.", 10], ["No.", 10], ["Yes.", 0], ["No.", 10]], [["All the time!", 10], ["Only at home", 6], ["Only at school", 4], ["I prefer strawberry flavour.", 0]], [["Call of Duty", 6], ["Minecraft", 10], ["Chess", 0], ["Something else.", 4]], [["Chrome", 10], ["Internet Explorer", 1], ["Firefox", 6], ["What's a browser?", 2]], [["Coding", 10], ["Browsing the web", 6], ["Gaming", 4], ["I don't", 0]], [["Yes. A lot.", 10], ["A bit.", 6], ["Not really.", 4], ["No.", 0]], [["It's great!", 10], ["I like it!", 6], ["It's OK.", 0], ["Maybe.", 0]], [["Yes.", 10], ["Maybe", 6], ["No.", 4], ["Definitely not!", 0]]]
   var page = -1;
   var score = 0;
   
@@ -57,6 +57,8 @@
    $("#qnum").html((page+1) + " / " + quizQuestions.length)
    $("#quiz").html("<p>" + quizQuestions[page] + "</p><br><br>" + ansText);
   }
+
+
  </script>
 </body>
 
