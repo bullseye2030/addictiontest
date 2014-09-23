@@ -49,14 +49,14 @@
   
   var timeout = setTimeout(warnTimeout, 15000);
   
+  $("*").click(function() {
+   clearTimeout(timeout);
+   clearTimeout(timeout2);
+   $("#warning").hide();
+   var timeout = setTimeout(warnTimeout, 15000);
+  }); 
+  
   function quizAdvance(clicked) {
-   
-   $("*").click(function() {
-    clearTimeout(timeout);
-    clearTimeout(timeout2);
-    $("#warning").hide();
-    var timeout = setTimeout(warnTimeout, 15000);
-   });
    
    page = page + 1;
    
