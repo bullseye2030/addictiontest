@@ -75,16 +75,16 @@
    if ((page+1) > quizQuestions.length) {
     if (score < 20) {
      comment = "Are you an adult? You aren't very addicted.";
-    } else if (score < 40) {
-     comment = "Not too bad... For an adult. :)";
-    } else if (score < 60) {
-     comment = "Good!";
-    } else if (score > 59) {
-     comment = "Woah. That's.... epic!";
-    } else if (score > 79) {
-     comment = "ZOMG!";
     } else if (score == 100) {
      comment = "Addicted, or did you use MAD HAX?";
+    } else if (score > 79) {
+     comment = "ZOMG!";
+    } else if (score > 59) {
+     comment = "Woah. That's.... epic!";
+    } else if (score < 60) {
+     comment = "Good!";
+    } else if (score < 40) {
+     comment = "Not too bad... For an adult. :)";
     } else {
      comment = "Wait what?";
     }
