@@ -43,8 +43,12 @@
   var timeout2;
   
   function warnTimeout() {
-   $("#warning").show();
-   timeout2 = setTimeout(function() { window.location.href = "/addictiontest"; }, 20000);
+   if (page != -1) {
+    $("#warning").show();
+    timeout2 = setTimeout(function() { window.location.href = "/addictiontest"; }, 20000);
+   } else {
+    timeout = setTimeout(warnTimeout, 15000);
+   }
   }
   
   var timeout = setTimeout(warnTimeout, 15000);
