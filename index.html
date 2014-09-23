@@ -40,16 +40,22 @@
   var page = -1;
   var score = 0;
   
+  var timeout2;
+  
   function warnTimeout() {
    $("#warning").show();
+   timeout2 = setTimeout(function() { window.location.href = "/addictiontest", 20000);
   }
   
-  var timeout = setTimeout(warnTimeout, 30000)
+  var timeout = setTimeout(warnTimeout, 15000);
   
   function quizAdvance(clicked) {
    
    $("*").click(function() {
-    
+    clearTimeout(timeout);
+    clearTimeout(timeout2);
+    $("#warning").hide();
+    var timeout = setTimeout(warnTimeout, 15000);
    });
    
    page = page + 1;
