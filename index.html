@@ -26,6 +26,7 @@
    <br>
    
    <div id="quiz" class="text-center jumbotron">
+    Note: This was a demo for my school's computing department. Some questions might not make sense out of context.
     <button onclick="quizAdvance(0)" class="btn btn-success btn-lg">Start The Test!</button>
    </div>
  </div>
@@ -90,7 +91,7 @@
     }
     $("#quiz").html("<h1>Congratulations!</h1><h2>You finished the quiz.</h2> <br><br> <h3>You scored...</h3><h1>" + score + "%!</h1><br><br><h4>" + comment + "</h4><br><br><a href='/addictiontest' class='btn btn-lg btn-danger'>Retry!</a><br><br><a href='https://twitter.com/intent/tweet?text=I+scored+XYZ%25+on+the+computer+addiction+test%21&url=http%3A%2F%2Faddictiontest.zudomc.me%2F&related=zudopig' id='tweetit' class='btn btn-info'>Tweet about it!</a>");
     $("#tweetit").attr("href", $("#tweetit").attr("href").replace("XYZ", score));
-    setTimeout(function() { window.location.href = '/addictiontest' }, 30000);
+    setTimeout(function() { window.location.href = '/' }, 30000);
     return;
    }
    
